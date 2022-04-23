@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.msg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bae1ff;
+}
+
+  .canvas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bae1ff;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 80vmin;
+    height: 80vmin;
+    border-radius: 50%; /*Circle --> 50%*/
+    background: #f9e0ae;
+  }
+
+  .cloud,
+  .cloud::after,
+  .cloud::before {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+  }
+
+  .cloud {
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .cloud.top-right {
+    height: 40px;
+    width: 100px;
+    top: -150px;
+    left: 420px;
+  }
+  
+  .cloud.top-right::after {
+    content: '';
+    background-color: white;
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    top: -15px;
+    left: 20px;
+  }
+  
+  .cloud.bottom-left {
+    height: 40px;
+    width: 140px;
+    top: 170px;
+    left: -480px;
+  }
+  
+  .cloud.bottom-left::before {
+    content: '';
+    background-color: white;
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    top: -30px;
+    left: 45px;
+    z-index: 100;
+  }
+  
+  .cloud.bottom-left::after {
+    content: '';
+    background-color: white;
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    top: -15px;
+    left: -34px;
+    z-index: 100;
+  }
+
+  .confetti {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    overflow: hidden;
+  }
+  
+  .squareOne, .squareTwo, .squareThree, .squareFour, .squareFive, .squareSix, .squareSeven, .squareEight, .squareNine, .squareTen {
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    top:-110px;
+  }
+  
+  .squareOne {
+    background-color: #ef476f;
+    animation: down 1.5s linear infinite;
+    left:50px;
+  }
+  
+  .squareTwo {
+    background-color: #06d6a0;
+    animation: down 1.3s linear infinite .2s;
+    left:150px;
+  }
+  
+  .squareThree {
+    background-color: #118ab2;
+    animation: down 1.4s linear infinite .4s;
+    left:250px;
+  }
+  
+  .squareFour {
+    background-color: #ffbe0b;
+    animation: down 1.7s linear infinite .1s;
+    left:300px;
+  }
+  
+  .squareFive {
+    background-color: #118ab2;
+    animation: down 1.6s linear infinite .7s;
+    left:5px;
+  }
+  
+  @keyframes down {
+    0% {top:-110px; transform: rotate(0deg) rotateY(-90deg);opacity:1;}
+    100% {top:400px; transform: rotate(360deg) rotateY(180deg);opacity:0.5;}
+  }
+  
+  @keyframes downTwo {
+    0% {top:-130px; transform: rotate(0deg) rotateY(90deg);opacity:1;}
+    100% {top:400px; transform: rotate(-360deg) rotateY(-180deg);opacity:0.5;}
+  }
+    
+  .squareSix {
+    background-color: #ffbe0b;
+    animation: downTwo 2.4s linear infinite .2s;
+    left:70px;
+  }
+  
+  .squareSeven {
+    background-color: #ef476f;
+    animation: downTwo 2.1s linear infinite .7s;
+    left:170px;
+  }
+  
+  .squareEight {
+    background-color: #ef476f;
+    animation: downTwo 2.4s linear infinite .9s;
+    left:280px;
+  }
+  
+  .squareNine {
+    background-color: #06d6a0;
+    animation: downTwo 2.9s linear infinite .9s;
+    left:50px;
+  }
+  
+  .squareTen {
+    background-color: #118ab2;
+    animation: downTwo 2.2s linear infinite 1.1s;
+    left:350px;
+  }
