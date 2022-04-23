@@ -18,6 +18,8 @@
 
 :octocat: Octocat is an image from the [Octodex GitHub](https://octodex.github.com/) gallery
 
+:tada: Confetti animation was done using only CSS
+
 ## Installation Steps 🛠️
 
 You don't need to do anything to see and use this template. 
