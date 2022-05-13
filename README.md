@@ -22,7 +22,12 @@
 
 ## Installation Steps 🛠️
 
-You don't need to do anything to see and use this template. 
+You don't need to do anything to see and use this template. Then, clone the repository
+
+```bash
+# Clone the repository
+$ git clone https://github.com/arianacabral/b-dayCard.git
+```
 
 ## Details 🔭
 
