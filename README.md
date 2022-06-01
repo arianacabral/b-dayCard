@@ -1,7 +1,7 @@
 # :birthday: b-day Card
 >  HTML, CSS &amp; JS Birthday Card
 
-| [<img src="demo/demo_bday.gif" width="100%;"/><br /><sub> B-day Card </sub>](demo/demo_bday.gif)<br /> | 
+| [<img src="demo/demo_bday.gif" width="100%;"/>](demo/demo_bday.gif) | 
 | :---: |
 
 ## Technologies and Languages 💻
